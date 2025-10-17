@@ -14,7 +14,7 @@ jobs:
           cmake ..
           make
           make test
-    Test_Add:
+  Test_Add:
     runs-on: ubuntu-latest
     needs: Compilation
     steps:
@@ -39,9 +39,9 @@ jobs:
       - name: Upload report as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: test-add-report
-          path: build/report.txt      # <-- le fichier à récupérer
-          retention-days: 14          # optionnel
+        name: test-add-report
+        path: build/report.txt      # <-- le fichier à récupérer
+        retention-days: 14          # optionnel
 
       - name: Job summary (facultatif mais pratique)
         run: |
