@@ -4,7 +4,7 @@
 #include "./../include/calculator.h"
 
 int main(int argc, char *argv[]){
-	if (argc == 3)
+	if (argc == 4)
 	else
 	{
 	char* op = argv[1];
