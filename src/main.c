@@ -5,6 +5,8 @@
 
 int main(int argc, char *argv[]){
 	if (argc < 3)
+	 return 1;
+	else
 	{
 	char* op = argv[1];
 	char* a = argv[2];
